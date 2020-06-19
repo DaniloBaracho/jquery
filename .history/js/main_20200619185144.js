@@ -30,7 +30,6 @@ function ConsultaCep2(){
             $("#showcep").html(response.cep);
             //alert(response.logradouro);
             $(".cep").show();
-            $(".barra").show();
             //document.getElementById("logradouro").innerHTML = response.logradouro;
            
         }
@@ -38,6 +37,5 @@ function ConsultaCep2(){
 } 
 $(function(){
     $(".cep").hide();
-    $(".barra").hide();
 });
 
