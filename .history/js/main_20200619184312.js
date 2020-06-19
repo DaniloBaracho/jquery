@@ -23,7 +23,7 @@ function ConsultaCep2(){
         success: function(response){
             console.log(response);
             $("#logradouro").html(response.logradouro);
-            $("#complemento").html(response.complemento);
+            $("#cidade").html(response.cidade);
             $("#uf").html(response.uf);
             $("#localidade").html(response.localidade);
             $("#bairro").html(response.bairro);

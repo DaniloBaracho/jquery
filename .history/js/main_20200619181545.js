@@ -3,7 +3,7 @@ function ConsultaCep(){
     var cep= document.getElementById("cep").value
     $.ajax({
         url:"https://viacep.com.br/ws/"+cep+"/json/",
-        type: "GET",
+        type: GET,
         success: function(response){
             console.log(response);
             //alert(response.logradouro);
@@ -16,21 +16,16 @@ function ConsultaCep(){
     })
 }
 function ConsultaCep2(){
-    var cep2= document.getElementById("cep2").value
+    var cep= document.getElementById("cep").value
     $.ajax({
-        url:"https://viacep.com.br/ws/"+cep2+"/json/",
-        type: "GET",
+        url:"https://viacep.com.br/ws/"+cep+"/json/",
+        type: GET,
         success: function(response){
             console.log(response);
-            $("#logradouro").html(response.logradouro);
-            $("#complemento").html(response.complemento);
-            $("#uf").html(response.uf);
-            $("#localidade").html(response.localidade);
-            $("#bairro").html(response.bairro);
             //alert(response.logradouro);
             
             //document.getElementById("logradouro").innerHTML = response.logradouro;
            
         }
     })
-} 
+}

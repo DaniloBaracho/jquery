@@ -22,11 +22,6 @@ function ConsultaCep2(){
         type: "GET",
         success: function(response){
             console.log(response);
-            $("#logradouro").html(response.logradouro);
-            $("#complemento").html(response.complemento);
-            $("#uf").html(response.uf);
-            $("#localidade").html(response.localidade);
-            $("#bairro").html(response.bairro);
             //alert(response.logradouro);
             
             //document.getElementById("logradouro").innerHTML = response.logradouro;
